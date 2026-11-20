@@ -1,0 +1,16 @@
+{
+ "null": {
+  "mean_diff": -0.0690076838699978,
+  "false_claim_rate": 0.0,
+  "median_p": 0.9968884559348226,
+  "n_people": 29
+ },
+ "artefact_null": {
+  "mean_diff": 0.12067460849024639,
+  "false_claim_rate": 0.95,
+  "median_p": 0.0003357585519552231,
+  "n_people": 29
+ },
+ "S1": true,
+ "S2": true
+}
