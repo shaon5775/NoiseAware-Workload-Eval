@@ -1,0 +1,25 @@
+# Noise-aware evaluation of EEG/fNIRS mental-workload decoders
+
+Code, pre-registrations and full results for the paper (in preparation):
+*"Does the brain know more than performance shows? A noise-aware test for neural workload decoders."*
+
+## What this repository shows
+1. Behaviour (task performance) alone predicts workload better than EEG/fNIRS decoders, and adding the brain does not help (COG-BCI, Tufts fNIRS2MW, Pavlov ds003838).
+2. Standard ways of asking "does the brain add information beyond performance" (plain AUC, behaviour matching / post-hoc counterbalancing, cross-validated confound regression) give false positives in 100 % of simulated cases when the behaviour measure is noisy (residual confounding; Westfall & Yarkoni 2016).
+3. **RB-ME (Reliability-Bounded Matched Evaluation):** split behaviour into two independent halves, match trials on one half, and compare the decoder with the attenuation-corrected bound that a perfect reader of true performance could reach, measured with the other half. Validated on simulated decoders; compared with SIMEX correction.
+4. Real data: neural information beyond performance appears in multitasking (MATB) but not in working-memory tasks; holds for logistic and EEGNet decoders.
+
+## Layout
+- `preregistrations/` — every rule file, written before the corresponding run (never changed; addenda are marked).
+- `results/` — result files for every test, including all failures.
+- `TEST_HISTORY.md` — chronological list of all tests and lessons.
+- `code/kaggle/` — heavy runs (data export from the public datasets, RB-ME, robustness, comparison, EEGNet). Run on Kaggle notebooks.
+- `code/laptop/` — light analysis scripts.
+
+## Data (public, not redistributed here)
+- COG-BCI: Hinss et al. (2023), Zenodo https://doi.org/10.5281/zenodo.7413650 (CC-BY-4.0)
+- Pavlov digit span: OpenNeuro ds003838 (CC0)
+- Tufts fNIRS2MW (CC-BY)
+
+## Licence
+Code: MIT. Text and result files: CC-BY-4.0.
