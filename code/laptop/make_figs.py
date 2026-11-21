@@ -121,7 +121,7 @@ print("done")
 # ---------- Fig 8: artefact check (P8-ARTEFACT; eye-only / muscle-only rows from P8-ARTEFACT2 when available) ----------
 import os
 A2 = json.load(open("artefact2_summary.json")) if os.path.exists("artefact2_summary.json") else {}
-va = [("No\nICA", 0.305, "1e-4")] + [(n, A2[k][0], A2[k][1]) for n, k in (("Eye\nonly", "eye"), ("Muscle\nonly", "muscle")) if k in A2] + \
+va = [("No\nICA", 0.305, "5e-5")] + [(n, A2[k][0], A2[k][1]) for n, k in (("Eye\nonly", "eye"), ("Muscle\nonly", "muscle")) if k in A2] + \
      [("Eye +\nmuscle", 0.077, "0.15"), ("+ no edge,\n1-20 Hz", 0.092, "0.14")]
 vb = [("Edge ch.", 0.181, "0.002"), ("Frontal", 0.152, "0.013"), ("Parietal", 0.113, "0.084"), ("Central", 0.109, "0.084"), ("Occipital", 0.042, "0.30"),
       ("30-40 Hz", 0.139, "0.044"), ("13-30 Hz", 0.111, "0.069"), ("8-13 Hz", 0.100, "0.13"), ("4-8 Hz", 0.045, "0.34"), ("1-4 Hz", 0.013, "0.54")]
