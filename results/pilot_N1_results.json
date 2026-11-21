@@ -1,0 +1,38 @@
+{
+ "felt": {
+  "n_people": 68,
+  "G0_G1_mean_rho_level_target": 0.8530748280475446,
+  "G2_within_level_mean": 0.0674039877918998,
+  "G2_wilcoxon_p": 0.05386119405873056,
+  "G2_share_positive": 0.5588235294117647,
+  "G3_set_vs_target": 0.30500271249136857,
+  "G3_felt_vs_target": 0.28427014768712205,
+  "set_vs_level": 0.34222490032700215,
+  "felt_vs_level": 0.3242130634676863,
+  "share_3back_felt_not_harder_than_2back": 0.058823529411764705
+ },
+ "felt2": {
+  "n_people": 68,
+  "G0_G1_mean_rho_level_target": 0.7212431729282289,
+  "G2_within_level_mean": 0.024941581762450295,
+  "G2_wilcoxon_p": 0.26455412109101084,
+  "G2_share_positive": 0.5588235294117647,
+  "G3_set_vs_target": 0.2452280613954492,
+  "G3_felt_vs_target": 0.21072662148381194,
+  "set_vs_level": 0.34222490032700215,
+  "felt_vs_level": 0.32421306346768625,
+  "share_3back_felt_not_harder_than_2back": 0.07352941176470588
+ },
+ "hard": {
+  "n_people": 68,
+  "G0_G1_mean_rho_level_target": 0.7781724346244104,
+  "G2_within_level_mean": -0.006111363141639547,
+  "G2_wilcoxon_p": 0.6588746130211662,
+  "G2_share_positive": 0.47058823529411764,
+  "G3_set_vs_target": 0.290565476026959,
+  "G3_felt_vs_target": 0.2904539985282979,
+  "set_vs_level": 0.34222490032700215,
+  "felt_vs_level": 0.3140479674183694,
+  "share_3back_felt_not_harder_than_2back": 0.07352941176470588
+ }
+}
